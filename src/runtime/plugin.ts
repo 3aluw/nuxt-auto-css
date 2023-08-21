@@ -6,8 +6,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   
   const options : any = useRuntimeConfig().public.myModule;
 
-console.log(options.folders)
-
 
 addRouteMiddleware((to, from) => {
 if(!options.folders.length) return;

@@ -8,8 +8,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule'
+    name: 'pages-auto-css',
+    configKey: 'pagesAutoCss'
   },
   // Default configuration options of the Nuxt module
   defaults: {
