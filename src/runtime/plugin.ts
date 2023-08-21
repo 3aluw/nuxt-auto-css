@@ -3,17 +3,26 @@ import{addRouteMiddleware, useHead,  useRuntimeConfig} from "#app"
 
 
 export default defineNuxtPlugin((nuxtApp) => {
-  console.log('Plugin injected by my-module!');
-  console.log(nuxtApp);
-  nuxtApp.hook('app:mounted',(app)=>{console.log(app);})
-  const options = useRuntimeConfig().public.myModule;
-  console.log( "options",options)
-  /*addRouteMiddleware((to, from) => {
-    if (to.path === '/test/one') {
-      console.log("head", useHead({
-        title : "sad"
-      }))
+  
+  const options : any = useRuntimeConfig().public.myModule;
+
+console.log(options.folders)
+
+
+addRouteMiddleware((to, from) => {
+if(!options.folders.length) return;
+
+const checkFolderName = options.folders.find((folderName:string)=>{ return to.path.includes(`/${folderName}/`)  });
+
+    
+ if (checkFolderName ) {
+ const path = `/style/${checkFolderName}.css`
+     useHead({
+        title : "sad",
+        link: [
+          {rel: 'stylesheet', type: 'text/css', href:`${path}` , key:"s"},]
+      })
     }
-  })*/
+  })
 
 })
