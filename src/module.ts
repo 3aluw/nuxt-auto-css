@@ -3,7 +3,7 @@ import { defu } from 'defu'
 import {useRuntimeConfig} from "#app"
 // Module options TypeScript interface definition
 export interface ModuleOptions {
-  folders : string
+  folders : string[]
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -13,24 +13,18 @@ export default defineNuxtModule<ModuleOptions>({
   },
   // Default configuration options of the Nuxt module
   defaults: {
-    folders: "test"
+    folders: []
   },
   setup (options, nuxt) {
-
-
+//create a plugin and provide it with moduleOptions
     const resolver = createResolver(import.meta.url)
-
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve('./runtime/plugin'))
     nuxt.options.runtimeConfig.public.myModule = defu([nuxt.options.runtimeConfig.public.myModule], {
       folders: options.folders
     })
     
-    nuxt.hook('pages:extend', pages => {
-
-    })
  
-   
+ 
     
 
   }
