@@ -8,8 +8,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'pages-auto-css',
-    configKey: 'pagesAutoCss'
+    name: 'nuxt-auto-css',
+    configKey: 'autoCss'
   },
   // Default configuration options of the Nuxt module
   defaults: {
@@ -22,10 +22,6 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.runtimeConfig.public.myModule = defu([nuxt.options.runtimeConfig.public.myModule], {
       folders: options.folders
     })
-    
- 
- 
-    
 
   }
 })
