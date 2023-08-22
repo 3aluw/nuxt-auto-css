@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "nuxt-auto-css",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "a module that will help you to apply css on nuxt pages",
+  "repository": "https://github.com/3aluw/nuxt-auto-css",
   "license": "MIT",
   "type": "module",
   "exports": {
