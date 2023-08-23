@@ -89,7 +89,10 @@ npm  install  --save-dev  nuxt-auto-css
 
     >     `public/style
     >      --| user.css // this will style all the pages in the user pages folder
-    >       --| product.css // this will style all the pages in the product  pages folder`
+    >      --| product.css // this will style all the pages in the product  pages folder`
+
+
+
 
 3. Add `nuxt-auto-css` to the `modules` section of `nuxt.config.ts`,
  and add  the folders that you want to apply the styling inside the module options :
