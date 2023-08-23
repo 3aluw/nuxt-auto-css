@@ -16,8 +16,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 
   
 
-# My Module
-
+# nuxt-auto-css
   
 
 [![npm version][npm-version-src]][npm-version-href]
@@ -34,7 +33,7 @@ A module that will help you managing your pages'styling in nuxt.
 
   
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
+<!--- [✨ &nbsp;Release Notes](/CHANGELOG.md)-->
 
 <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
 
