@@ -1,6 +1,6 @@
 {
   "name": "nuxt-auto-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a module that will help you to apply css on nuxt pages",
   "repository": "https://github.com/3aluw/nuxt-auto-css",
   "license": "MIT",
@@ -28,7 +28,8 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.5"
+    "@nuxt/kit": "^3.6.5",
+    "defu": "^6.1.2"
   },
   "devDependencies": {
     "@types/node": "^18.17.3",
