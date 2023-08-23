@@ -1,6 +1,7 @@
 import { defineNuxtModule, addPlugin, createResolver, extendPages  } from '@nuxt/kit'
-import { defu } from 'defu'
-import {useRuntimeConfig} from "#app"
+import  {defu}  from 'defu'
+
+
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   folders : string[]
@@ -19,7 +20,7 @@ export default defineNuxtModule<ModuleOptions>({
 //create a plugin and provide it with moduleOptions
     const resolver = createResolver(import.meta.url)
     addPlugin(resolver.resolve('./runtime/plugin'))
-    nuxt.options.runtimeConfig.public.myModule = defu([nuxt.options.runtimeConfig.public.myModule], {
+    nuxt.options.runtimeConfig.public.myModule = defu(nuxt.options.runtimeConfig.public.myModule, {
       folders: options.folders
     })
 
