@@ -16,7 +16,7 @@ Find and replace all on all files (CMD+SHIFT+F):
 
   
 
-# nuxt-auto-css
+# nuxt-css-manager
   
 
 [![npm version][npm-version-src]][npm-version-href]
@@ -59,7 +59,7 @@ A module that will help you managing your pages'styling in nuxt.
 
   
 
-1. Add `nuxt-auto-css` dependency to your project
+1. Add `nuxt-css-nmanager` dependency to your project
 
   
 
@@ -67,19 +67,19 @@ A module that will help you managing your pages'styling in nuxt.
 
 # Using pnpm
 
-pnpm  add  -D  nuxt-auto-css
+pnpm  add  -D  nuxt-css-nmanager
 
   
 
 # Using yarn
 
-yarn  add  --dev  nuxt-auto-css
+yarn  add  --dev  nuxt-css-nmanager
 
   
 
 # Using npm
 
-npm  install  --save-dev  nuxt-auto-css
+npm  install  --save-dev  nuxt-css-nmanager
 
 ```
 
@@ -94,7 +94,7 @@ npm  install  --save-dev  nuxt-auto-css
 
 
 
-3. Add `nuxt-auto-css` to the `modules` section of `nuxt.config.ts`,
+3. Add `nuxt-css-nmanager` to the `modules` section of `nuxt.config.ts`,
  and add  the folders that you want to apply the styling inside the module options :
 
 ```js
@@ -103,7 +103,7 @@ export  default  defineNuxtConfig({
 
 modules: [
 
-'nuxt-auto-css'
+'nuxt-css-nmanager'
 ], 
 
 autoCss: {
@@ -117,7 +117,7 @@ folders: ["user"]
 
 
 
-That's it! You can now use `auto-css`module in your Nuxt app ✨
+That's it! You can now use `css-nmanager`module in your Nuxt app ✨
 
   
 
