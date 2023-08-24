@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-auto-css",
-  "version": "1.0.1",
+  "name": "nuxt-css-manager",
+  "version": "1.0.0",
   "description": "a module that will help you to apply css on nuxt pages",
-  "repository": "https://github.com/3aluw/nuxt-auto-css",
+  "repository": "https://github.com/3aluw/nuxt-css-manager",
   "license": "MIT",
   "type": "module",
   "exports": {

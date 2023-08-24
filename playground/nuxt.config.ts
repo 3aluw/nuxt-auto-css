@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  autoCss: {
+  cssManager: {
     folders: ["user"]
   },
   devtools: { enabled: true }

@@ -9,8 +9,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-auto-css',
-    configKey: 'autoCss'
+    name: 'nuxt-css-manager',
+    configKey: 'cssManager'
   },
   // Default configuration options of the Nuxt module
   defaults: {
